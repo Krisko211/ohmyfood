@@ -84,15 +84,23 @@ h4 {
 .section_click {
   padding: 0 5vw;
 }
+@media screen and (min-width: 1024px) {
+  .section_click {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background: linear-gradient(white, #eaeaea);
+  }
+}
 a {
   text-decoration: none;
   color: black;
 }
 
 @media screen and (min-width: 1024px) {
-  .section_click {
-    display: flex;
-    width: 100%;
+  .section_presentation {
+    width: 50%;
+    text-align: start;
   }
 }
 
@@ -117,10 +125,22 @@ a {
   right: 28px;
   padding: 5px 10px;
 }
+.section_click__btn__order p {
+  position: relative;
+  bottom: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .sectionflexmedia {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+  }
+}
 /*** section restaurants **/
 
 .section_restaurants {
-  padding: 5vw;
+  padding: 0 5vw;
   background-color: #f6f6f6;
   align-items: center;
 }
@@ -165,6 +185,7 @@ a {
   height: 2.5em;
   line-height: 0.7em;
   white-space: nowrap;
+  border-radius: 4px;
 }
 .card__img img {
   height: 150px;
@@ -187,6 +208,11 @@ a {
   margin-top: 0.6rem;
   margin-bottom: 0.2rem;
 }
+.card__caption__text p {
+  font-weight: lighter;
+  margin-top: 10px;
+  margin-bottom: 0.6rem;
+}
 .card__caption__hrt {
   padding: 0px;
   position: relative;
@@ -199,4 +225,43 @@ a {
   position: relative;
   vertical-align: middle;
   width: 2.5em;
+}
+.fa-stack :nth-child(2) {
+  color: transparent;
+  transition: all 350ms;
+  padding: 0px;
+}
+@media screen and (min-width: 1024px) {
+  .card {
+    max-width: 500px;
+    margin: 16px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .section_restaurants__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+/*** Footer ***/
+
+.footer {
+  background-color: #353535;
+  color: white;
+  padding: 5vw;
+}
+.footer_h5 {
+  font-family: shrikhand, cursive;
+  font-size: larger;
+  margin-top: 0px;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+.footer a:visited {
+  color: white;
 }
