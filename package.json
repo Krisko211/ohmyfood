@@ -1,0 +1,23 @@
+{
+  "name": "ohmylunch",
+  "version": "1.0.0",
+  "description": "Projoet OCR N°4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass":"sass --watch  style.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Krisko211/Ohmylunch.git"
+  },
+  "author": "Christian Kolodziejski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Krisko211/Ohmylunch/issues"
+  },
+  "homepage": "https://github.com/Krisko211/Ohmylunch#readme",
+  "dependencies": {
+    "sass": "^1.63.3"
+  }
+}
