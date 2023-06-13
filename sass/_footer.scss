@@ -1,0 +1,17 @@
+.footer {
+  background-color: #353535;
+  color: white;
+  padding: 5vw;
+  & h5 {
+    font-family: shrikhand, cursive;
+    font-size: larger;
+    margin-top: 0px;
+  }
+  & a {
+    color: white;
+    text-decoration: none;
+    & :visited {
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.header {
+  background-color: #ffff;
+  height: 63px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0px 5px 5px lightgrey;
+  & img {
+    display: flex;
+    text-align: center;
+    & h1 {
+      margin-top: 10px;
+    }
+  }
+}
