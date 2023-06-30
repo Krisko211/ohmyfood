@@ -1,3 +1,10 @@
+
+fieldset,
+button,
+input {
+  border: none;
+}
+
 .btn {
     background: linear-gradient(170deg, #ff79da, #9356dc);
     color: white;
@@ -5,11 +12,13 @@
     padding: 1rem;
     border-radius: 50px;
     border: none;
-    margin-bottom: 7vw;
+    margin: 3vw;
     box-shadow: 4px 4px 2px lightgrey;
-    width: 60vw;
+    width: 62vw;
     max-width: 250px;
     align-self: center;
     transition: 250ms;
     cursor: pointer;
+
   }
+
