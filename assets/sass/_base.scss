@@ -19,6 +19,11 @@ body {
 .fas {
   margin-right: 5px;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
+
 /* # - Heart icon animation ------------------ # */
 
 .restaurant .far,
@@ -28,6 +33,7 @@ body {
   width: 26px;
   color: inherit;
 }
+
 .restaurant .fas,
 .restaurant_page .fas,
 .card .fas {

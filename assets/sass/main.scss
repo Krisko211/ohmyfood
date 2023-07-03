@@ -4,8 +4,6 @@
 @use "../sass/btn";
 @use "../sass/loader";
 
-
-
 .section_presentation {
   overflow: hidden;
   display: flex;
@@ -14,23 +12,26 @@
   text-align: center;
   gap: 20px;
   background: linear-gradient(white, #eaeaea);
+  & h2 {
+    margin-top: 30px;
+    font-style: normal;
+    text-align: center;
+  }
+  & h4 {
+    width: 315px;
+    height: 46px;
+    margin-top: 20px;
+    font-weight: 300;
+  }
 }
-.section_presentation h2 {
-  margin-top: 30px;
-  font-style: normal;
-  text-align: center;
-}
-.section_presentation h4 {
-  width: 315px;
-  height: 46px;
-  font-weight: 300;
-}
+
 @media screen and (min-width: 1024px) {
   .section_presentation h4 {
     width: 100%;
     text-align: center;
   }
 }
+
 /*** section click ***/
 
 .section_click {
@@ -50,14 +51,10 @@
   }
 }
 @media screen and (min-width: 1024px) {
-.section_click__title {
-  width: 100%;
-  max-width: 1440px;
-}
-}
-a {
-  text-decoration: none;
-  color: black;
+  .section_click__title {
+    width: 100%;
+    max-width: 1440px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -91,6 +88,9 @@ a {
 .section_click__btn__order p {
   position: relative;
   bottom: 5px;
+}
+.fa-store {
+  color: #9356dc;
 }
 @media screen and (min-width: 1024px) {
   .sectionflexmedia {
@@ -219,7 +219,7 @@ a {
 }
 .restaurant_page__picture {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 275px;
   width: 100%;
 }
@@ -248,7 +248,7 @@ a {
     padding-right: 320px;
     padding-left: 320px;
   }
-} 
+}
 .restaurant_page__like-icon-container {
   font-size: 24px;
   width: 24px;
@@ -328,16 +328,12 @@ a {
     transform: scaleX(1);
   }
 }
-.restaurant .fas:hover + .far,
-.restaurant .fas:focus + .far,
-.restaurant .fas:active + .far,
+
 .restaurant_page .fas:hover + .far,
 .restaurant_page .fas:focus + .far,
 .restaurant_page .fas:active + .far,
 .card .fas:hover + .far,
-.card .fas:focus + .far,
 .card .fas:active + .far,
-.restaurant .fas,
 .restaurant_page .fas,
 .card .fas {
   background: linear-gradient(rgb(147, 86, 220), #ff79da);
@@ -382,44 +378,6 @@ address {
   color: inherit;
 }
 
-.reservation__content {
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-}
-
-.card__like-icon {
-  font-size: 22px;
-}
-.card__title {
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-}
-.card__subtitle {
-  font-family: "Roboto", sans-serif;
-  font-size: 17px;
-  font-weight: 300;
-}
-.card--new {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.button_style1,
-.button_style2 {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.button_style1:active {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-}
-
 .restaurant_page__title {
   font-family: "Shrikhand", cursive;
   font-size: 28px;
@@ -450,7 +408,6 @@ address {
   font-weight: 700;
 }
 
-
 /* # - Card restaurant ----------------------- # */
 
 .card {
@@ -467,21 +424,6 @@ address {
   transition: box-shadow, transform, 0.5s;
 }
 
-.card__picture {
-  border-radius: 15px 15px 0 0;
-  height: 174px;
-  width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-.card__description {
-  display: flex;
-  flex-direction: column;
-  justify-content: initial;
-  align-items: initial;
-  gap: 5px;
-  padding: 0 25px 0 13px;
-}
 .card .fa-heart {
   width: 26px;
   position: absolute;

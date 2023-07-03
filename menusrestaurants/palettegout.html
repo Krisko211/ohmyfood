@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/212bc73e08.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <title>La palette du gout</title>
+</head>
+
+<body>
+    <!-- Hearder -->
+    <header class="header">
+        <div class="header_logo__container header_logo__container__no-shadow  header_logo__container__alt-size">
+            <a class="header_back-arrow" href="../index.html">
+                <i class=" fa-solid fa-arrow-left"></i>
+            </a>
+
+            <img class="header_logo__img" src="../images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+        </div>
+    </header>
+    <main>
+        <article class="restaurant_page">
+            <img class="restaurant_page__picture" src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                alt="image de plat servi au restaurant la palette du goût">
+            <div class="restaurant_page__headline">
+                <h2 class="restaurant_page__title">La palette du goût</h2>
+                <div class="restaurant_page__like-icon-container">
+                    <i class="fa-heart fas restaurant_page__like-icon "></i>
+                    <i class="fa-heart far restaurant_page__like-icon"></i>
+                </div>
+            </div>
+            <form class="restaurant_page__form form" method="get" action="#">
+                <!-- order choice 1 -->
+                <h2 class="form_title">Entrées</h2>
+                <input id="starter_choice__1" type="radio" name="starter-choice" value="1">
+                <label for="starter_choice__1">
+                    <span class="form_subtitle">Fricassée d'escargots</span>
+                    <span class="form_description__container">
+                        <span class="form_description">Au piment d'Espelette</span><span class="form_price">25€</span>
+                    </span>
+                </label>
+                <input id="starter_choice__2" type="radio" name="starter-choice" value="2">
+                <label for="starter_choice__2">
+                    <span class="form_subtitle">Foie gras de canard mi-cuit</span>
+                    <span class="form_description__container">
+                        <span class="form_description">Et ses copeaux de truffe noire</span><span
+                            class="form_price">35€</span>
+                    </span>
+                </label>
+                <input id="starter_choice__3" type="radio" name="starter-choice" value="3">
+                <label for="starter_choice__3">
+                    <span class="form_subtitle">Œuf au plat</span>
+                    <span class="form_description__container">
+                        <span class="form_description">Assaisonné à la truffe sur lit de caviar</span><span
+                            class="form_price">20€</span>
+                    </span>
+                </label>
+                <!-- order choice 2-->
+                <h2 class="form_title">Plats</h2>
+                <input id="dish_choice__1" type="radio" name="dish-choice" value="1">
+                <label for="dish_choice__1">
+                    <span class="form_subtitle">Filet de bœuf aux herbes</span>
+                    <span class="form_description__container">
+                        <span class="form_description">Accompagné de sa ribambelle de légumes</span><span
+                            class="form_price">40€</span>
+                    </span>
+                </label>
+                <input id="dish_choice__2" type="radio" name="dish-choice" value="2">
+                <label for="dish_choice__2">
+                    <span class="form_subtitle">Parmentier de queue de bœuf</span>
+                    <span class="form_description__container">
+                        <span class="form_description">À la truffe noire sur sa purée de panais</span><span
+                            class="form_price">35€</span>
+                    </span>
+                </label>
+                <input id="dish_choice__3" type="radio" name="dish-choice" value="3">
+                <label for="dish_choice__3">
+                    <span class="form_subtitle">Filet de turbot</span>
+                    <span class="form_description__container">
+                        <span class="form_description">Aux agrumes</span><span class="form_price">44€</span>
+                    </span>
+                </label>
+                <!-- order choice 3-->
+                <h2 class="form_title">Desserts</h2>
+                <input id="dessert_choice__1" type="radio" name="dessert-choice" value="1">
+                <label for="dessert_choice__1">
+                    <span class="form_subtitle">Paris-Brest</span>
+                    <span class="form_description__container">
+                        <span class="form_description">Revisité</span><span class="form_price">18€</span>
+                    </span>
+                </label>
+                <input id="dessert_choice__2" type="radio" name="dessert-choice" value="2">
+                <label for="dessert_choice__2">
+                    <span class="form_subtitle">Macaron au chocolat d'exception </span>
+                    <span class="form_description__container">
+                        <span class="form_description">Et glace à la vanille de Madagascar</span><span
+                            class="form_price">22€</span>
+                    </span>
+                </label>
+                <input id="dessert_choice__3" type="radio" name="dessert-choice" value="3">
+                <label for="dessert_choice__3">
+                    <span class="form_subtitle">Mousse au chocolat</span>
+                    <span class="form_description__container">
+                        <span class="form_description">Et sa délicate touche de fraîcheur</span><span
+                            class="form_price">23€</span>
+                    </span>
+                </label>
+                <button class="btn">Commander</button>
+            </form>
+        </article>
+    </main>
+    <footer class="footer">
+        <a href="#">
+            <h5 class="footer_h5">ohmyfood</h5>
+        </a>
+        <div class="footer_selection">
+            <p class="footer_link"><a href="#">
+                    <i class="fas fa-utensils"></i>&nbsp;Proposer un restaurant
+            </p></a>
+            <p class="footer_link"><a href="#">
+                    <i class="fas fa-hands-helping"></i>&nbsp;Devenir partenaire
+            </p></a>
+            <p class="footer_p"><a href="#">Mentions légales</p></a>
+            <p class="footer_p"><a href="mailto:ohmylunch.fr">Contact</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

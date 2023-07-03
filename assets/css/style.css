@@ -22,33 +22,28 @@ body {
   margin-right: 5px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 /* # - Heart icon animation ------------------ # */
-.restaurant .far,
+.far,
 .restaurant_page .far,
 .card .far {
   text-align: center;
   width: 26px;
   color: inherit;
-}
-
-.restaurant .fas,
-.restaurant_page .fas,
-.card .fas {
-  text-align: center;
-  width: 26px;
   z-index: 1;
   opacity: 0;
   transition: opacity 0.5s;
 }
 
-.restaurant .fas:hover,
-.restaurant .fas:focus,
-.restaurant .fas:active,
+.fas:hover,
+.fas:active,
 .restaurant_page .fas:hover,
-.restaurant_page .fas:focus,
 .restaurant_page .fas:active,
 .card .fas:hover,
-.card .fas:focus,
 .card .fas:active {
   opacity: 1;
   cursor: pointer;
@@ -129,14 +124,13 @@ body {
   }
 }
 @media (min-width: 1440px) {
-  .header_log__txt {
+  .header_logo__txt {
+    display: none;
+  }
+  .header_logo__img {
     display: none;
   }
 }
-.header_logo__img {
-  display: none;
-}
-
 @media (min-width: 1440px) {
   .header_logo__img {
     display: flex;
@@ -219,6 +213,32 @@ input {
   align-self: center;
   transition: 250ms;
   cursor: pointer;
+}
+
+.section_click__btn {
+  display: flex;
+  flex-direction: row;
+  background-color: #f6f6f6;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 4px 4px 2px lightgrey;
+  border-radius: 20px 20px;
+  text-align: center;
+  height: 4rem;
+  line-height: 2rem;
+  white-space: nowrap;
+}
+.section_click__btn__order {
+  position: relative;
+  border-radius: 50%;
+  background-color: #9356dc;
+  color: white;
+  right: 28px;
+  padding: 5px 10px;
+}
+.section_click__btn__order p {
+  position: relative;
+  bottom: 5px;
 }
 
 .loader {
@@ -354,16 +374,15 @@ input {
   gap: 20px;
   background: linear-gradient(white, #eaeaea);
 }
-
 .section_presentation h2 {
   margin-top: 30px;
   font-style: normal;
   text-align: center;
 }
-
 .section_presentation h4 {
   width: 315px;
   height: 46px;
+  margin-top: 20px;
   font-weight: 300;
 }
 
@@ -396,11 +415,6 @@ input {
     max-width: 1440px;
   }
 }
-a {
-  text-decoration: none;
-  color: black;
-}
-
 @media screen and (min-width: 1024px) {
   .section_presentation {
     width: 100%;
@@ -433,6 +447,10 @@ a {
 .section_click__btn__order p {
   position: relative;
   bottom: 5px;
+}
+
+.fa-store {
+  color: #9356dc;
 }
 
 @media screen and (min-width: 1024px) {
@@ -696,16 +714,11 @@ a {
     transform: scaleX(1);
   }
 }
-.restaurant .fas:hover + .far,
-.restaurant .fas:focus + .far,
-.restaurant .fas:active + .far,
 .restaurant_page .fas:hover + .far,
 .restaurant_page .fas:focus + .far,
 .restaurant_page .fas:active + .far,
 .card .fas:hover + .far,
-.card .fas:focus + .far,
 .card .fas:active + .far,
-.restaurant .fas,
 .restaurant_page .fas,
 .card .fas {
   background: linear-gradient(rgb(147, 86, 220), #ff79da);
@@ -748,47 +761,6 @@ address {
   font-size: 16px;
   font-weight: 500;
   color: inherit;
-}
-
-.reservation__content {
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-}
-
-.card__like-icon {
-  font-size: 22px;
-}
-
-.card__title {
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.card__subtitle {
-  font-family: "Roboto", sans-serif;
-  font-size: 17px;
-  font-weight: 300;
-}
-
-.card--new {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.button_style1,
-.button_style2 {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.button_style1:active {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
 }
 
 .restaurant_page__title {
@@ -838,23 +810,6 @@ address {
   background-color: white;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   transition: box-shadow, transform, 0.5s;
-}
-
-.card__picture {
-  border-radius: 15px 15px 0 0;
-  height: 174px;
-  width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-.card__description {
-  display: flex;
-  flex-direction: column;
-  justify-content: initial;
-  align-items: initial;
-  gap: 5px;
-  padding: 0 25px 0 13px;
 }
 
 .card .fa-heart {
