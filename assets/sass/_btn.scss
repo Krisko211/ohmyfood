@@ -1,25 +1,24 @@
+@use "./variables" as *;
 
 fieldset,
 button,
 input {
   border: none;
 }
-
 .btn {
-    background: linear-gradient(170deg, #ff79da, #9356dc);
+    background: linear-gradient(170deg, $secondarycolor, $primarycolor);
     color: white;
     font-size: large;
     padding: 1rem;
     border-radius: 50px;
     border: none;
     margin: 3vw;
-    box-shadow: 4px 4px 2px lightgrey;
+    box-shadow: 4px 4px 2px $shadow;
     width: 62vw;
     max-width: 250px;
     align-self: center;
     transition: 250ms;
     cursor: pointer;
-
   }
   .section_click__btn {
     display: flex;
@@ -27,7 +26,7 @@ input {
     background-color: #f6f6f6;
     margin: 1rem;
     padding: 1rem;
-    box-shadow: 4px 4px 2px lightgrey;
+    box-shadow: 4px 4px 2px $shadow;
     border-radius: 20px 20px;
     text-align: center;
     height: 4rem;
@@ -37,14 +36,13 @@ input {
   &__order {
     position: relative;
     border-radius: 50%;
-    background-color: #9356dc;
-    color: white;
+    background-color: $primarycolor;
+    color: $white;
     right: 28px;
     padding: 5px 10px;
   }
   &__order p {
     position: relative;
     bottom: 5px;
-    
   }
   }

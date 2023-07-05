@@ -330,7 +330,7 @@
 }
 
 .restaurant_page .fas:hover + .far,
-.restaurant_page .fas:focus + .far,
+.restaurant_page + .far,
 .restaurant_page .fas:active + .far,
 .card .fas:hover + .far,
 .card .fas:active + .far,
@@ -355,9 +355,7 @@ main {
   margin: auto;
 }
 
-:focus {
-  outline: none;
-}
+
 
 address {
   font-style: inherit;
@@ -480,7 +478,7 @@ address {
   }
 }
 .restaurant_page .form label:hover,
-.restaurant_page .form label:focus {
+.restaurant_page .form {
   box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.15);
 }
 .restaurant_page .form label::before {

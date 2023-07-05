@@ -44,18 +44,17 @@ a {
   transition: opacity 0.5s;
 }
 .restaurant .fas:hover,
-.restaurant .fas:focus,
 .restaurant .fas:active,
 .restaurant_page .fas:hover,
-.restaurant_page .fas:focus,
 .restaurant_page .fas:active,
 .card .fas:hover,
-.card .fas:focus,
 .card .fas:active {
   opacity: 1;
   cursor: pointer;
 }
-
+.fa-arrow-left {
+  font-size: larger;
+}
 .section_choice {
   display: flex;
     flex-direction: row;
