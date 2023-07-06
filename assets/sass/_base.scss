@@ -6,7 +6,7 @@
   padding: 0;
 }
 .bgc {
- background-color:  #f6f6f6;
+  background-color: #f6f6f6;
 }
 body {
   position: relative;
@@ -15,24 +15,36 @@ body {
   width: 100%;
   margin: 0 auto;
 }
-
 .fas {
   margin-right: 5px;
+}
+.fa-store:hover {
+  color: #9356dc;
+}
+.fa-mobile-alt {
+  color: #7e7e7e;
+
+  &-list-ul {
+    color: #7e7e7e;
+  }
+  &-store {
+    color: #7e7e7e;
+  }
+}
+.fa-arrow-left {
+  font-size: larger;
 }
 a {
   text-decoration: none;
   color: black;
 }
-
 /* # - Heart icon animation ------------------ # */
-
 .restaurant_page .far,
 .card .far {
   text-align: center;
   width: 26px;
   color: inherit;
 }
-
 .restaurant_page .fas,
 .card .fas {
   text-align: center;
@@ -41,7 +53,6 @@ a {
   opacity: 0;
   transition: opacity 0.5s;
 }
-
 .restaurant_page .fas:hover,
 .restaurant_page .fas:active,
 .card .fas:hover,
@@ -49,16 +60,14 @@ a {
   opacity: 1;
   cursor: pointer;
 }
-.fa-arrow-left {
-  font-size: larger;
-}
+
 .section_choice {
   display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 17px;
-    height: 50px;
-    margin: 0 auto;
-    background-color: #eaeaea;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  height: 50px;
+  margin: 0 auto;
+  background-color: #eaeaea;
 }

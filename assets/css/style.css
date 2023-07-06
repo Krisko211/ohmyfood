@@ -22,6 +22,24 @@ body {
   margin-right: 5px;
 }
 
+.fa-store:hover {
+  color: #9356dc;
+}
+
+.fa-mobile-alt {
+  color: #7e7e7e;
+}
+.fa-mobile-alt-list-ul {
+  color: #7e7e7e;
+}
+.fa-mobile-alt-store {
+  color: #7e7e7e;
+}
+
+.fa-arrow-left {
+  font-size: larger;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -50,10 +68,6 @@ a {
 .card .fas:active {
   opacity: 1;
   cursor: pointer;
-}
-
-.fa-arrow-left {
-  font-size: larger;
 }
 
 .section_choice {
@@ -260,7 +274,7 @@ input {
   gap: 2rem;
   background: white;
   position: fixed;
-  animation: loading 5s;
+  animation: loading 2.5s;
 }
 
 @media (min-width: 768px) {
@@ -407,6 +421,18 @@ input {
 
 .fa-store:hover {
   color: #9356dc;
+}
+
+.fa-mobile-alt {
+  color: #7e7e7e;
+}
+
+.fa-list-ul {
+  color: #7e7e7e;
+}
+
+.fa-store {
+  color: #7e7e7e;
 }
 
 @media screen and (min-width: 1024px) {
@@ -800,7 +826,7 @@ address {
   font-weight: 700;
 }
 
-/* # - Card restaurants ----------------------- # */
+/* # - Card restaurant ----------------------- # */
 .card {
   display: flex;
   flex-direction: column;
@@ -823,7 +849,6 @@ address {
 }
 
 /* # - Form ---------------------------------- # */
-
 .restaurant_page .form {
   background: #f6f6f6;
   margin: 0 auto;
