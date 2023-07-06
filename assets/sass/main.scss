@@ -3,6 +3,7 @@
 @use "../sass/footer";
 @use "../sass/btn";
 @use "../sass/loader";
+@use "../sass/variables";
 
 .section_presentation {
   overflow: hidden;
@@ -11,7 +12,7 @@
   align-items: center;
   text-align: center;
   gap: 20px;
-  background: linear-gradient(white, #eaeaea);
+  background: linear-gradient(#ffff, #eaeaea);
   & h2 {
     margin-top: 30px;
     font-style: normal;
@@ -38,7 +39,9 @@
   padding: 0 4vw 5vw 5vw;
   margin-top: 50px;
 }
-
+.fa-store:hover {
+  color: #9356dc;
+}
 @media screen and (min-width: 1024px) {
   .section_click {
     display: flex;
@@ -70,7 +73,7 @@
   background-color: #f6f6f6;
   margin: 1rem;
   padding: 1rem;
-  box-shadow: 4px 4px 2px lightgrey;
+  box-shadow: 4px 4px 2px #d3d3d3;
   border-radius: 20px 20px;
   text-align: center;
   height: 4rem;
@@ -81,7 +84,7 @@
   position: relative;
   border-radius: 50%;
   background-color: #9356dc;
-  color: white;
+  color: #ffff;
   right: 28px;
   padding: 5px 10px;
 }
@@ -89,9 +92,7 @@
   position: relative;
   bottom: 5px;
 }
-.fa-store {
-  color: #9356dc;
-}
+
 @media screen and (min-width: 1024px) {
   .sectionflexmedia {
     display: flex;

@@ -26,7 +26,6 @@ a {
 
 /* # - Heart icon animation ------------------ # */
 
-.restaurant .far,
 .restaurant_page .far,
 .card .far {
   text-align: center;
@@ -34,7 +33,6 @@ a {
   color: inherit;
 }
 
-.restaurant .fas,
 .restaurant_page .fas,
 .card .fas {
   text-align: center;
@@ -43,8 +41,7 @@ a {
   opacity: 0;
   transition: opacity 0.5s;
 }
-.restaurant .fas:hover,
-.restaurant .fas:active,
+
 .restaurant_page .fas:hover,
 .restaurant_page .fas:active,
 .card .fas:hover,
