@@ -1,7 +1,7 @@
 # ohmyfood
 
 Travail réalisé pour le projet 4 de la formation Développeur Web d’OpenClassrooms.
- Ce repo contient le code du site mobile “OhMyFood”.
+Ce repo contient le code du site mobile “OhMyFood”.
 
 La mission était de développer un site “mobile first” qui répertorie les menus de restaurants gastronomiques. 
 En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée.
@@ -11,6 +11,6 @@ En plus des systèmes classiques de réservation, les clients pourront composer 
 Technologies utilisées:
 Ce project a été construit en HTML5 et CSS3 et utilise les outils suivants :
 
- ➡️ Node (v18.16.0 ou ultérieure)
+➡️ Node (v18.16.0 ou ultérieure)
 
 ➡️ Sass (v1.63.3 ou ultérieure)
