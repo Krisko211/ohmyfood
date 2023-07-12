@@ -2,7 +2,7 @@
 @use "./variables" as *;
 
 .header {
-  background-color: #ffff;
+  background-color: $white;
   height: 63px;
   position: relative;
   display: flex;
@@ -17,15 +17,15 @@
     }
   }
 }
+
 /***  Header menus ***/
 
 .header {
-  display: flex;
   flex-direction: initial;
-  justify-content: center;
   align-items: center;
   gap: initial;
 }
+
 .header_back-arrow {
   display: flex;
   flex-direction: initial;

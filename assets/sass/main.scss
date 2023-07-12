@@ -25,7 +25,6 @@
     font-weight: 300;
   }
 }
-
 @media screen and (min-width: 1024px) {
   .section_presentation h4 {
     width: 100%;
@@ -40,18 +39,6 @@
   margin-top: 50px;
 }
 
-.fa-store:hover {
-  color: #9356dc;
-}
-.fa-mobile-alt {
-  color: #7e7e7e;
-}
-.fa-list-ul {
-  color: #7e7e7e;
-}
-.fa-store {
-  color: #7e7e7e;
-}
 @media screen and (min-width: 1024px) {
   .section_click {
     display: flex;
@@ -69,14 +56,12 @@
     max-width: 1440px;
   }
 }
-
 @media screen and (min-width: 1024px) {
   .section_presentation {
     width: 100%;
     text-align: start;
   }
 }
-
 .section_click__btn {
   display: flex;
   flex-direction: row;
@@ -89,6 +74,7 @@
   height: 4rem;
   line-height: 2rem;
   white-space: nowrap;
+  cursor: pointer;
 }
 .section_click__btn__order {
   position: relative;
@@ -102,7 +88,6 @@
   position: relative;
   bottom: 5px;
 }
-
 @media screen and (min-width: 1024px) {
   .sectionflexmedia {
     display: flex;
@@ -136,11 +121,13 @@
   border-radius: 20px 20px;
   height: fit-content;
   width: 90vw;
+
+  &__img {
+    position: relative;
+    width: 90vw;
+  }
 }
-.card__img {
-  position: relative;
-  width: 90vw;
-}
+
 @media screen and (min-width: 1024px) {
   .card__img {
     max-width: 500px;
@@ -173,26 +160,27 @@
   display: flex;
   justify-content: space-between;
   height: 65px;
+
+  &__text {
+    padding: 0 1rem;
+    border-bottom-left-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+  }
+  &__text h4 {
+    margin-top: 0.6rem;
+    margin-bottom: 0.2rem;
+  }
+  .card__caption__text p {
+    font-weight: lighter;
+    margin-top: 15px;
+    margin-bottom: 0.6rem;
+  }
 }
-.card__caption__text {
-  padding: 0 1rem;
-  border-bottom-left-radius: 20px 20px;
-  border-bottom-right-radius: 20px 20px;
-}
-.card__caption__text h4 {
-  margin-top: 0.6rem;
-  margin-bottom: 0.2rem;
-}
-.card__caption__text p {
-  font-weight: lighter;
-  margin-top: 15px;
-  margin-bottom: 0.6rem;
-}
+
 .card__caption__hrt {
   padding: 0px;
-  position: relative;
   top: 15px;
-  font-size: 22px;
+  font-size: 25px;
 }
 .fa-stack {
   display: inline-block;
@@ -290,6 +278,7 @@
   transform-origin: right;
   animation: label-appear 500ms ease-in-out;
   animation-fill-mode: forwards;
+  cursor: pointer;
 }
 .restaurant_page__form label:nth-of-type(10) {
   animation-delay: 2000ms;
@@ -354,6 +343,7 @@
 }
 
 /* # - short-text ------------------- # */
+
 .restaurant_page .form_description,
 .restaurant_page .form_subtitle {
   overflow: hidden;
@@ -365,8 +355,6 @@ main {
   z-index: 0;
   margin: auto;
 }
-
-
 
 address {
   font-style: inherit;
@@ -437,7 +425,7 @@ address {
   width: 26px;
   position: absolute;
   right: 23px;
-  top: 5px;
+  top: 10px;
 }
 
 /* # - Form ---------------------------------- # */

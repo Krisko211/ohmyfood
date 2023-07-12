@@ -22,17 +22,15 @@ body {
   margin-right: 5px;
 }
 
-.fa-store:hover {
+.fa-store {
   color: #9356dc;
 }
 
 .fa-mobile-alt {
   color: #7e7e7e;
 }
-.fa-mobile-alt-list-ul {
-  color: #7e7e7e;
-}
-.fa-mobile-alt-store {
+
+.fa-list-ul {
   color: #7e7e7e;
 }
 
@@ -83,7 +81,7 @@ a {
 
 /***  Header global  ***/
 .header {
-  background-color: white;
+  background-color: #ffffff;
   height: 63px;
   position: relative;
   display: flex;
@@ -101,9 +99,7 @@ a {
 
 /***  Header menus ***/
 .header {
-  display: flex;
   flex-direction: initial;
-  justify-content: center;
   align-items: center;
   gap: initial;
 }
@@ -165,7 +161,7 @@ a {
 }
 .footer {
   background-color: #353535;
-  color: white;
+  color: #ffffff;
   padding: 5vw;
 }
 .footer h5 {
@@ -174,11 +170,11 @@ a {
   margin-top: 0;
 }
 .footer a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
 }
 .footer a :visited {
-  color: white;
+  color: #ffffff;
 }
 
 .footer_link {
@@ -222,44 +218,18 @@ input {
 
 .btn {
   background: linear-gradient(170deg, #ff79da, #9356dc);
-  color: white;
+  color: #ffffff;
   font-size: large;
   padding: 1rem;
   border-radius: 50px;
   border: none;
-  margin: 3vw;
+  margin: 0 2vw 5vw;
   box-shadow: 4px 4px 2px #d3d3d3;
   width: 62vw;
   max-width: 250px;
   align-self: center;
   transition: 250ms;
   cursor: pointer;
-}
-
-.section_click__btn {
-  display: flex;
-  flex-direction: row;
-  background-color: #f6f6f6;
-  margin: 1rem;
-  padding: 1rem;
-  box-shadow: 4px 4px 2px #d3d3d3;
-  border-radius: 20px 20px;
-  text-align: center;
-  height: 4rem;
-  line-height: 2rem;
-  white-space: nowrap;
-}
-.section_click__btn__order {
-  position: relative;
-  border-radius: 50%;
-  background-color: #9356dc;
-  color: #ffffff;
-  right: 28px;
-  padding: 5px 10px;
-}
-.section_click__btn__order p {
-  position: relative;
-  bottom: 5px;
 }
 
 .loader {
@@ -272,7 +242,7 @@ input {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  background: white;
+  background: #ffffff;
   position: fixed;
   animation: loading 2.5s;
 }
@@ -419,22 +389,6 @@ input {
   margin-top: 50px;
 }
 
-.fa-store:hover {
-  color: #9356dc;
-}
-
-.fa-mobile-alt {
-  color: #7e7e7e;
-}
-
-.fa-list-ul {
-  color: #7e7e7e;
-}
-
-.fa-store {
-  color: #7e7e7e;
-}
-
 @media screen and (min-width: 1024px) {
   .section_click {
     display: flex;
@@ -470,6 +424,7 @@ input {
   height: 4rem;
   line-height: 2rem;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .section_click__btn__order {
@@ -520,7 +475,6 @@ input {
   height: fit-content;
   width: 90vw;
 }
-
 .card__img {
   position: relative;
   width: 90vw;
@@ -561,19 +515,16 @@ input {
   justify-content: space-between;
   height: 65px;
 }
-
 .card__caption__text {
   padding: 0 1rem;
   border-bottom-left-radius: 20px 20px;
   border-bottom-right-radius: 20px 20px;
 }
-
 .card__caption__text h4 {
   margin-top: 0.6rem;
   margin-bottom: 0.2rem;
 }
-
-.card__caption__text p {
+.card__caption .card__caption__text p {
   font-weight: lighter;
   margin-top: 15px;
   margin-bottom: 0.6rem;
@@ -581,9 +532,8 @@ input {
 
 .card__caption__hrt {
   padding: 0px;
-  position: relative;
   top: 15px;
-  font-size: 22px;
+  font-size: 25px;
 }
 
 .fa-stack {
@@ -688,6 +638,7 @@ input {
   transform-origin: right;
   animation: label-appear 500ms ease-in-out;
   animation-fill-mode: forwards;
+  cursor: pointer;
 }
 
 .restaurant_page__form label:nth-of-type(10) {
@@ -845,7 +796,7 @@ address {
   width: 26px;
   position: absolute;
   right: 23px;
-  top: 5px;
+  top: 10px;
 }
 
 /* # - Form ---------------------------------- # */

@@ -1,3 +1,5 @@
+@use "../sass/variables" as *;
+
 *,
 ::after,
 ::before {
@@ -18,27 +20,28 @@ body {
 .fas {
   margin-right: 5px;
 }
-.fa-store:hover {
-  color: #9356dc;
+
+.fa-store {
+  color: $primarycolor;
 }
 .fa-mobile-alt {
-  color: #7e7e7e;
-
-  &-list-ul {
-    color: #7e7e7e;
-  }
-  &-store {
-    color: #7e7e7e;
-  }
+  color: $facolor;
 }
+.fa-list-ul {
+  color: $facolor;
+}
+
+
 .fa-arrow-left {
   font-size: larger;
 }
+
 a {
   text-decoration: none;
-  color: black;
+  color: $blackcolor;
 }
 /* # - Heart icon animation ------------------ # */
+
 .restaurant_page .far,
 .card .far {
   text-align: center;
@@ -53,6 +56,7 @@ a {
   opacity: 0;
   transition: opacity 0.5s;
 }
+
 .restaurant_page .fas:hover,
 .restaurant_page .fas:active,
 .card .fas:hover,
@@ -60,7 +64,6 @@ a {
   opacity: 1;
   cursor: pointer;
 }
-
 .section_choice {
   display: flex;
   flex-direction: row;

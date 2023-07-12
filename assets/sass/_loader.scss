@@ -1,3 +1,5 @@
+@use "../sass/variables" as *;
+
 .loader {
     z-index: -1;
     width: 100%;
@@ -8,7 +10,7 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background: white;
+    background: $white;
     position: fixed;
     animation: loading 2.5s;
   }

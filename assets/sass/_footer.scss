@@ -1,7 +1,8 @@
+@use "../sass/variables" as *;
 
 .footer {
   background-color: #353535;
-  color: white;
+  color: $white;
   padding: 5vw;
   & h5 {
     font-family: shrikhand, cursive;
@@ -9,14 +10,13 @@
     margin-top: 0;
   }
   & a {
-    color: white;
+    color: $white;
     text-decoration: none;
     & :visited {
-      color: white;
+      color: $white;
     }
   }
 }
-
 
 
 .footer_link {
