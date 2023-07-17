@@ -21,3 +21,29 @@ input {
     cursor: pointer;
   }
 
+  .section_click__btn {
+    display: flex;
+    flex-direction: row;
+    background-color: #f6f6f6;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 4px 4px 2px #d3d3d3;
+    border-radius: 20px 20px;
+    text-align: center;
+    height: 4rem;
+    line-height: 2rem;
+    white-space: nowrap;
+    cursor: pointer;
+  &__order {
+    position: relative;
+    border-radius: 50%;
+    background-color: #9356dc;
+    color: #ffff;
+    right: 28px;
+    padding: 5px 10px;
+  }
+  &__order p {
+    position: relative;
+    bottom: 5px;
+  }
+  }

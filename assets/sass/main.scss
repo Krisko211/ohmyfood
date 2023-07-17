@@ -25,6 +25,7 @@
     font-weight: 300;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .section_presentation h4 {
     width: 100%;
@@ -62,32 +63,7 @@
     text-align: start;
   }
 }
-.section_click__btn {
-  display: flex;
-  flex-direction: row;
-  background-color: #f6f6f6;
-  margin: 1rem;
-  padding: 1rem;
-  box-shadow: 4px 4px 2px #d3d3d3;
-  border-radius: 20px 20px;
-  text-align: center;
-  height: 4rem;
-  line-height: 2rem;
-  white-space: nowrap;
-  cursor: pointer;
-}
-.section_click__btn__order {
-  position: relative;
-  border-radius: 50%;
-  background-color: #9356dc;
-  color: #ffff;
-  right: 28px;
-  padding: 5px 10px;
-}
-.section_click__btn__order p {
-  position: relative;
-  bottom: 5px;
-}
+
 @media screen and (min-width: 1024px) {
   .sectionflexmedia {
     display: flex;
@@ -182,6 +158,7 @@
   top: 15px;
   font-size: 25px;
 }
+
 .fa-stack {
   display: inline-block;
   height: 2em;
@@ -190,11 +167,7 @@
   vertical-align: middle;
   width: 2.5em;
 }
-.fa-stack :nth-child(2) {
-  color: transparent;
-  transition: all 350ms;
-  padding: 0px;
-}
+
 @media screen and (min-width: 1024px) {
   .card {
     max-width: 500px;
@@ -236,6 +209,7 @@
   z-index: 1;
   background: #f6f6f6;
 }
+
 @media (min-width: 768px) {
   .restaurant_page__headline {
     padding-right: 175px;
@@ -419,13 +393,13 @@ address {
   background-color: white;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   transition: box-shadow, transform, 0.5s;
-}
 
-.card .fa-heart {
-  width: 26px;
-  position: absolute;
-  right: 23px;
-  top: 10px;
+  & fa-heart {
+    width: 26px;
+    position: absolute;
+    right: 23px;
+    top: 10px;
+  }
 }
 
 /* # - Form ---------------------------------- # */

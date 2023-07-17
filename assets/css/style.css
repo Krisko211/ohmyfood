@@ -545,11 +545,6 @@ input {
   width: 2.5em;
 }
 
-.fa-stack :nth-child(2) {
-  color: transparent;
-  transition: all 350ms;
-  padding: 0px;
-}
 
 @media screen and (min-width: 1024px) {
   .card {
