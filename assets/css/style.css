@@ -18,6 +18,11 @@ body {
   margin: 0 auto;
 }
 
+main {
+  z-index: 0;
+  margin: auto;
+}
+
 .fas {
   margin-right: 5px;
 }
@@ -232,6 +237,33 @@ input {
   cursor: pointer;
 }
 
+.section_click__btn {
+  display: flex;
+  flex-direction: row;
+  background-color: #f6f6f6;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 4px 4px 2px #d3d3d3;
+  border-radius: 20px 20px;
+  text-align: center;
+  height: 4rem;
+  line-height: 2rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.section_click__btn__order {
+  position: relative;
+  border-radius: 50%;
+  background-color: #9356dc;
+  color: white;
+  right: 28px;
+  padding: 5px 10px;
+}
+.section_click__btn__order p {
+  position: relative;
+  bottom: 5px;
+}
+
 .loader {
   z-index: -1;
   width: 100%;
@@ -412,35 +444,6 @@ input {
     text-align: start;
   }
 }
-.section_click__btn {
-  display: flex;
-  flex-direction: row;
-  background-color: #f6f6f6;
-  margin: 1rem;
-  padding: 1rem;
-  box-shadow: 4px 4px 2px #d3d3d3;
-  border-radius: 20px 20px;
-  text-align: center;
-  height: 4rem;
-  line-height: 2rem;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.section_click__btn__order {
-  position: relative;
-  border-radius: 50%;
-  background-color: #9356dc;
-  color: white;
-  right: 28px;
-  padding: 5px 10px;
-}
-
-.section_click__btn__order p {
-  position: relative;
-  bottom: 5px;
-}
-
 @media screen and (min-width: 1024px) {
   .sectionflexmedia {
     display: flex;
@@ -455,7 +458,6 @@ input {
   background-color: #f6f6f6;
   align-items: center;
 }
-
 .section_restaurants__title {
   font-style: normal;
   font-weight: 700;
@@ -545,7 +547,6 @@ input {
   width: 2.5em;
 }
 
-
 @media screen and (min-width: 1024px) {
   .card {
     max-width: 500px;
@@ -565,14 +566,12 @@ input {
 .restaurant_page {
   background-color: white;
 }
-
 .restaurant_page__picture {
   -o-object-fit: cover;
   object-fit: cover;
   height: 275px;
   width: 100%;
 }
-
 .restaurant_page__headline {
   display: flex;
   flex-direction: initial;
@@ -600,10 +599,8 @@ input {
     padding-left: 320px;
   }
 }
-.restaurant_page__like-icon-container {
-  font-size: 24px;
-  width: 24px;
-  margin-right: 25px;
+.restaurant_page__form {
+  max-width: 1055px;
 }
 
 .restaurant_page__like-icon {
@@ -611,8 +608,10 @@ input {
   line-height: 41px;
 }
 
-.restaurant_page__form {
-  max-width: 1055px;
+.restaurant_page__like-icon-container {
+  font-size: 24px;
+  width: 24px;
+  margin-right: 25px;
 }
 
 @media (min-width: 768px) {
@@ -714,15 +713,6 @@ input {
   text-overflow: ellipsis;
 }
 
-main {
-  z-index: 0;
-  margin: auto;
-}
-
-address {
-  font-style: inherit;
-}
-
 .localisation-container input[type=text]::-moz-placeholder {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -786,8 +776,7 @@ address {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   transition: box-shadow, transform, 0.5s;
 }
-
-.card .fa-heart {
+.card fa-heart {
   width: 26px;
   position: absolute;
   right: 23px;

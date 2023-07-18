@@ -17,6 +17,11 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+main {
+  z-index: 0;
+  margin: auto;
+}
+
 .fas {
   margin-right: 5px;
 }
@@ -30,7 +35,6 @@ body {
 .fa-list-ul {
   color: $facolor;
 }
-
 
 .fa-arrow-left {
   font-size: larger;

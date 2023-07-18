@@ -79,13 +79,15 @@
   padding: 0 5vw;
   background-color: #f6f6f6;
   align-items: center;
+
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
-.section_restaurants__title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-}
+
 .card {
   height: fit-content;
   flex: 100%;
@@ -188,26 +190,26 @@
 
 .restaurant_page {
   background-color: white;
-}
-.restaurant_page__picture {
-  -o-object-fit: cover;
-  object-fit: cover;
-  height: 275px;
-  width: 100%;
-}
-.restaurant_page__headline {
-  display: flex;
-  flex-direction: initial;
-  justify-content: space-between;
-  align-items: initial;
-  gap: initial;
-  max-width: 1055px;
-  position: relative;
-  margin: -40px auto 0 auto;
-  padding: 32px 3.4vw 0px 7.4vw;
-  border-radius: 40px 40px 0 0;
-  z-index: 1;
-  background: #f6f6f6;
+  &__picture {
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 275px;
+    width: 100%;
+  }
+  &__headline {
+    display: flex;
+    flex-direction: initial;
+    justify-content: space-between;
+    align-items: initial;
+    gap: initial;
+    max-width: 1055px;
+    position: relative;
+    margin: -40px auto 0 auto;
+    padding: 32px 3.4vw 0px 7.4vw;
+    border-radius: 40px 40px 0 0;
+    z-index: 1;
+    background: #f6f6f6;
+  }
 }
 
 @media (min-width: 768px) {
@@ -222,18 +224,19 @@
     padding-left: 320px;
   }
 }
-.restaurant_page__like-icon-container {
-  font-size: 24px;
-  width: 24px;
-  margin-right: 25px;
+.restaurant_page__form {
+  max-width: 1055px;
 }
 .restaurant_page__like-icon {
   position: absolute;
   line-height: 41px;
 }
-.restaurant_page__form {
-  max-width: 1055px;
+.restaurant_page__like-icon-container {
+  font-size: 24px;
+  width: 24px;
+  margin-right: 25px;
 }
+
 @media (min-width: 768px) {
   .restaurant_page__form {
     padding-right: 100px;
@@ -254,6 +257,7 @@
   animation-fill-mode: forwards;
   cursor: pointer;
 }
+
 .restaurant_page__form label:nth-of-type(10) {
   animation-delay: 2000ms;
 }
@@ -323,15 +327,6 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-}
-
-main {
-  z-index: 0;
-  margin: auto;
-}
-
-address {
-  font-style: inherit;
 }
 
 .localisation-container input[type="text"]::-moz-placeholder {
